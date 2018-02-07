@@ -44,3 +44,8 @@ function anagrammedName(name) {
 		return name;
 	}
 }
+
+$(".uniku").click(function(e) {
+	e.preventDefault();	
+	$(this).text(anagrammedName($(this).text()))
+});
